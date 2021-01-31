@@ -4,6 +4,8 @@ function blog_theme_support()
 {
   // Adds dynamic title tag support
   add_theme_support('title-tag');
+  add_theme_support('custom-logo');
+  add_theme_support('post-thumbnails');
 };
 
 add_action('after_setup_theme', 'blog_theme_support');
@@ -18,6 +20,8 @@ function blog_menus()
 }
 
 add_action('init', 'blog_menus');
+
+
 
 function blog_register_styles()
 {
